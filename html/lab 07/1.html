@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register form</title>
+    <style type="text/css">
+        option{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://accounts.google.com/SignOutOptions?hl=vi&continue=https://classroom.google.com/u/0/c/MTk4NDEwNDcxMTQ2">
+        <fieldset>
+            <legend>Your Details:</legend>
+            <label>Name:
+                <input type="text" name="username" maxlength="30" size="30"/>
+            </label><br><br>
+            <label>Email:
+                <input type="email" name="emailid" size="30" maxlength="30">
+            </label>
+        </fieldset><br>
+        <fieldset>
+            <legend>Your Review:</legend><br>
+            <label>How did you hear about us?
+                <select name="type">
+                    <option value="google" selected>Google</option>
+                    <option value="friend">Friend</option>
+                    <option value="advert">Advert</option>
+                    <option value="other">Other</option>
+                </select>
+            </label><br><br>
+            <label>Would you visit again? <br>
+                <input type="radio" name="choice" value="yes" checked>Yes
+                <input type="radio" name="choice" value="no">No
+                <input type="radio" name="choice" value="maybe">Maybe
+            </label><br><br>
+            <label>Comments: <br>
+                <textarea name="comments" rows="4" cols="40"></textarea>
+            </label><br><br>
+            <label>
+                <input type="checkbox" name="sign up" value="signup" checked>
+                Sign me up for email updates<br>
+                <input type="submit" name="submit" value="Submit review">
+            </label>
+        </fieldset>
+    </form>
+</body>
+</html>
