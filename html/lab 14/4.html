@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script>
+        $(document).ready(function () {
+        $("button").click(function () {
+            $("#div1").load("https://s3-us-west-2.amazonaws.com/ajaxex/html/ajaxContent.html", function (responseTxt, statusTxt, xhr))
+            if (statusTxt == "success")
+                alert("Remote content loaded successfully");
+            if(statusTxt == "error")
+                alert("Error: " + xhr.status + ": " + xhr.statusText)
+        });
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+
+</div>
+</body>
+</html>
