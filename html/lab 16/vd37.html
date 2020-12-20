@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="UTF-8">
+    <title>VD37</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSVwPFKdrwD3unUfSGVYrahYqY=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdl.datatables.net/1.10.13/css/jquery.datatables.min.css" >
+    <script src="https://cdl.datatables.net/1.10.13/js/jquery.datatables.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('datatable').dataTable();
+        })
+    </script>
+</head>
+<body style="font-family: Arial">
+    <form id="form1" runat="server">
+        <div style="width: 500px; border: 1px solid black; padding: 5px">
+            <table id="datatable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>City</th>
+                        <th>Country</th>
+                        <th>Continent</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Monteria</td>
+                        <td>Colombia</td>
+                        <td>South America</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Birmingham</td>
+                        <td>United Kingdom</td>
+                        <td>Europe</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Bangalore</td>
+                        <td>India</td>
+                        <td>Asia</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
